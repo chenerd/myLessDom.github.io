@@ -1,0 +1,59 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="90" fill="#2c3e50" />
+  
+  <!-- 小丑脸 -->
+  <circle cx="100" cy="100" r="80" fill="#e74c3c" />
+  
+  <!-- 眼睛 -->
+  <g class="eyes">
+    <circle cx="70" cy="80" r="15" fill="#fff">
+      <animate attributeName="r" values="15;12;15" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="130" cy="80" r="15" fill="#fff">
+      <animate attributeName="r" values="15;12;15" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- 眼珠 -->
+    <circle cx="70" cy="80" r="8" fill="#2c3e50">
+      <animate attributeName="cx" values="67;73;67" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="130" cy="80" r="8" fill="#2c3e50">
+      <animate attributeName="cx" values="127;133;127" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- 鼻子 -->
+  <circle cx="100" cy="100" r="12" fill="#c0392b">
+    <animate attributeName="r" values="12;14;12" dur="1s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- 嘴巴 -->
+  <path d="M60,120 Q100,160 140,120" stroke="#fff" stroke-width="8" fill="none">
+    <animate attributeName="d" 
+             values="M60,120 Q100,160 140,120;M60,130 Q100,170 140,130;M60,120 Q100,160 140,120" 
+             dur="3s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- 装饰点 -->
+  <circle cx="50" cy="110" r="5" fill="#fff">
+    <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="150" cy="110" r="5" fill="#fff">
+    <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- 头发 -->
+  <g class="hair">
+    <path d="M40,60 Q50,20 100,30 Q150,20 160,60" 
+          stroke="#f1c40f" 
+          stroke-width="12" 
+          fill="none">
+      <animate attributeName="d" 
+               values="M40,60 Q50,20 100,30 Q150,20 160,60;M40,65 Q50,25 100,35 Q150,25 160,65;M40,60 Q50,20 100,30 Q150,20 160,60" 
+               dur="2s" 
+               repeatCount="indefinite" />
+    </path>
+  </g>
+</svg> 
